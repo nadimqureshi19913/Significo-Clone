@@ -1,0 +1,73 @@
+
+:root
+{
+    --salmon:#EF9D71;
+    --black:#000;
+    --white:#fff;
+    --cyan:#80becc;
+    --dsalmon:#532521;
+    --dcyan:#24414c;
+}
+
+body
+{
+    transition: background-color ease-out .5s;
+}
+
+.Vdodiv
+{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+*::selection
+{
+    background-color: var(--salmon);
+    
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Macondo", cursive;
+}
+body[theme="black"]{
+    background-color: var(--black);
+}
+
+body[theme="black"] .section{
+    color: var(--white);
+}
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+    color: var(--dcyan);
+}
+
+body[theme="dcyan"]{
+    background-color: var(--dcyan);
+}
+body[theme="dcyan"] .section{
+    color: var(--cyan);
+}
+
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+
+
+body[theme="salmon"] .section
+{
+    color: var(--dsalmon);
+}
+
+body[theme="white"]{
+    background-color: var(--white);
+}
+
+body[theme="white"] .section{
+    color: var(--black);
+}
